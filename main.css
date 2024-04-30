@@ -1,0 +1,320 @@
+img#logo{
+    height: 115px;
+    width: 115px;
+    border: 3px solid gold;
+    border-radius: 50%;
+    margin-top: 120px;
+  }
+  
+  a {
+    color: gold;
+    text-decoration: none;
+    transition: color 0.2 ease;
+  }
+  
+  a:hover{
+    color: darkgoldenrod;
+  }
+  
+  span.DR{
+    margin-top: 110px;
+  }
+  
+  button#show-login,
+  button#show-signup{
+    border: 2px solid gold;
+    color: black;
+    display: flex;
+    margin: 0 10px;
+    padding: 2px 3px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    background-color: gold;
+    cursor: pointer;
+    transition: background-color 0.4 ease;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+  }
+  
+  button#show-login:hover,
+  button#show-signup:hover{
+    background-color: darkgoldenrod;
+  }
+  
+  .popup-container {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: silver;
+    border: 4px solid gold;
+    border-radius: 5px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+  }
+  
+  .popup-container.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.25);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+  }
+  
+  .popup-container .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    height: 20px;
+    background: goldenrod;
+    color: black;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .popup-container .form {
+    margin: 15px 0px;
+  }
+  
+  .buttonDD {
+    color: gold;
+  }
+  
+  .dropdown-menu.hidden {
+    display: none;
+  }
+  
+  .dropdown-menu a {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: gray;
+    color: rgb(255, 234, 181);
+  }
+  
+  
+  a.DD {
+    color: gold;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-menu {
+    background-color: silver;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cc-container {
+    width: 100%;
+    margin-top: 10%;
+    color: gold;
+    overflow-x: auto;
+  }
+  
+  #cryptoTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #cryptoTable th {
+    padding: 12px; 
+    text-align: center;
+    border-bottom: 2px solid gold;
+  }
+  
+  #cryptoTable td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid gold;
+  }
+  
+  
+  i#btc{
+    color: gold;
+  }
+  
+  i#eth{
+    display: flex;
+    color: gold;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #nav-container {
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+  }
+  
+  #nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    background-image: linear-gradient(to right, silver, rgb(110, 93, 1));
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  button.buy {
+    border: 2px solid rgb(114, 114, 114);
+    background-color: aliceblue;
+    padding: 0 20px;
+  }
+
+  .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: auto;
+}
+
+.popup {
+    background-color: #dbdbdb;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    margin: 100px auto;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.form-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.form-element {
+    margin-bottom: 15px;
+}
+
+fieldset {
+    font-size: 14px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button.swap {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    margin-bottom: 20px;
+}
+
+button.L,
+button.S {
+    padding: 10px 50.7px;
+    border: 3px solid goldenrod;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.L:hover,
+button.S:hover {
+    background-color: goldenrod;
+    color: rgb(217, 217, 217);
+}
+
+.submit {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: black;
+    background-color: rgb(107, 106, 106);
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #777;
+    color: #c6c6c6;
+}
+
+.popup-container.active .button-container {
+    display: none;
+}
+
+.popup-container.active {
+    display: block;
+}
+
+.button-container button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: gold; 
+    color: black;
+}
+
+body.image {
+    background-image: url("/static/images/JPEG%20image%2045.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: -20px;
+}
+
+.bg-image {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+h1.coin {
+    font-size: 1rem;
+}

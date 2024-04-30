@@ -1,0 +1,151 @@
+<!-- Inspired by coingecko -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/e2c889255e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Digital Realm</title>
+</head>
+<body>
+    <div class="grid" data-controller="navbar" data-action="navbar:click:outside->navbar#hideAccountMenu">
+        <div class="container order-2 2lg:order-none overflow-x-auto 2lg:py-2.5">
+            <div class="py-2 flex items-center">
+                <div class="flex-1 flex gap-x-4 whitespace-nowrap pr-[15px] 2lg:pr-0">
+                    <h1 class="coin">Coins: 14,033</h1>
+                </div>
+            </div>
+        </div>
+
+        <i data-view-component="true" class="fa-btc fab" id="btc"></i>
+        <i data-view-component="true" class="fa-ethereum fab" id="eth"></i>
+
+        <div class="button-container" id="loginSignupButtons">
+            <div class="dropdown" id="dropdown">
+                
+            </div>
+            <button class="LO" id="show-login">Login</button>
+            <button class="SU" id="show-signup">Sign Up</button>
+        </div>
+        
+        <!-- popup form -->
+        <div class="popup-container hidden" id="popup-container">
+            <button class="swap">
+                <button class="L" type="button">Login</button>
+                <button class="S" type="button">SignUp</button>
+            </button>
+            
+            <div class="overlay">
+                <div class="popup">
+                    <button class="close-btn">&times;</button>
+            
+                    <!-- Login Form -->
+                    <div class="login-form form-wrapper">
+                        <h2 id="login-heading">Login to track coins from the Dhysics ⚡️</h2>
+                        <form id="signin-form">
+                            <div class="form-element">
+                                <fieldset id="email-field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter your email address">
+                                </fieldset>
+                                <span class="underline"></span>
+                            </div>
+                            <div class="form-element">
+                                <fieldset id="pass-field">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                    <span class="underline"></span>
+                                </fieldset>
+                            </div>
+                            <div class="form-element">
+                                <input type="checkbox" id="remember-me">
+                                <label for="remember-me">Remember me</label>
+                            </div>
+                            <div class="form-element">
+                                <button class="submit">Sign In</button>
+                            </div>
+                            <div class="form-element">
+                                <a href="#">Forgot password?</a>
+                            </div>
+                        </form>
+                    </div>
+            
+                    <!-- Signup Form -->
+                    <div class="signup-form form-wrapper" style="display: none;">
+                        <h2 id="signup-heading">IT'S FREE99! Track digital economics easily with DhysicsRealm ⚡️</h2>
+                        <form id="signup-form">
+                            <div class="form-element">
+                                <fieldset id="email-field">
+                                    <label for="email">Email (Required)</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter your email address">
+                                </fieldset>
+                                <span class="underline"></span>
+                            </div>
+                            <div class="form-element">
+                                <fieldset id="pass-field">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                    <span class="underline"></span>
+                                </fieldset>
+                            </div>
+                            <div class="form-element">
+                                <button class="submit">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Navbar -->
+        <div id="nav-container">
+            <div id="nav" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+                <div class="flex items-center flex-shrink-0">
+                    <a id="move" href="/" class="flex items-center text-yellow-500 rounded-md px-3 py-2 text-sm font-medium">
+                        <img id="logo" class="h-8 2lg:h-10 block dark:hidden mr-1" src="./images/JPEG image 35.jpeg" alt="Logo">
+                        <span class="DR">DhysicsRealm</span>
+                    </a>
+                </div>
+                <div class="sm:block sm:ml-6">
+                    <div class="flex space-x-4">
+                        <a href="/" class="text-yellow-500 rounded-md px-3 py-2 text-sm font-medium">CryptoCurrencies</a>
+                        <a href="/" class="text-yellow-500 rounded-md px-3 py-2 text-sm font-medium">Learn</a>
+                        <a href="/" class="text-yellow-500 rounded-md px-3 py-2 text-sm font-medium">Market Places</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="CC">
+            <div class="cc-container">
+                <table id="cryptoTable">
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Price</th>
+                            <th>Supply</th>
+                            <th>Volume</th>
+                            <th>Market Cap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <!-- Table body JS -->
+                    </tbody>
+            </table>
+            </div>
+        </section>
+
+        <div>
+            😂 if this message reaches you don't forget to laugh.
+        </div>
+</body>
+</html>
